@@ -1,0 +1,62 @@
+2017-10-13 01:03:02.173 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-10-13 01:03:03.217 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.4.1
+2017-10-13 01:03:03.217 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-10-13 01:03:03.217 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\paula\Documents\dev\spring-data-solr-example\solr
+2017-10-13 01:03:03.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-13T01:03:03.217Z
+2017-10-13 01:03:03.253 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-10-13 01:03:03.299 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr
+2017-10-13 01:03:03.318 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\solr.xml
+2017-10-13 01:03:04.014 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-10-13 01:03:04.145 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr
+2017-10-13 01:03:04.152 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [collection1]
+2017-10-13 01:03:04.368 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader [collection1] Added 51 libs to classloader, from paths: [/C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/clustering/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/extraction/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/langid/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/velocity/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/dist]
+2017-10-13 01:03:04.372 INFO  (main) [   ] o.e.j.s.Server Started @4970ms
+2017-10-13 01:03:06.154 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.1
+2017-10-13 01:03:06.375 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema conf/managed-schema is still loadable.  PLEASE REMOVE THIS FILE.
+2017-10-13 01:03:06.469 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema [collection1] Schema name=example-data-driven-schema
+2017-10-13 01:03:06.787 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-10-13 01:03:07.674 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-10-13 01:03:07.785 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.CoreContainer Creating SolrCore 'collection1' using configuration from instancedir C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1
+2017-10-13 01:03:07.860 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrCore [[collection1] ] Opening new SolrCore at [C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1], dataDir=[C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\data\]
+2017-10-13 01:03:07.861 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@141cb24
+2017-10-13 01:03:07.971 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-10-13 01:03:08.700 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-10-13 01:03:08.700 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-10-13 01:03:08.859 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-10-13 01:03:08.859 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-10-13 01:03:08.962 INFO  (qtp223684-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=882
+2017-10-13 01:03:09.196 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@6cd28d[collection1] main]
+2017-10-13 01:03:09.211 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\conf
+2017-10-13 01:03:09.235 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-10-13 01:03:09.244 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-10-13 01:03:09.250 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\conf\elevate.xml
+2017-10-13 01:03:09.296 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-10-13 01:03:09.339 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6cd28d[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(6.4.1):C1)))}
+2017-10-13 01:03:09.339 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-13 01:03:09.339 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-10-13 01:03:09.357 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@6cd28d[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(6.4.1):C1)))}
+2017-10-13 01:03:38.428 INFO  (qtp223684-22) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c38e58[collection1] realtime]
+2017-10-13 01:03:38.428 INFO  (qtp223684-22) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={wt=javabin&version=2}{deleteByQuery=*:* (-1581102261429338112)} 0 137
+2017-10-13 01:03:38.468 INFO  (qtp223684-20) [   x:collection1] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-10-13 01:03:38.468 INFO  (qtp223684-20) [   x:collection1] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1fc8392
+2017-10-13 01:03:38.496 INFO  (qtp223684-20) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@117a944[collection1] main]
+2017-10-13 01:03:38.498 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@117a944[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-10-13 01:03:38.498 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-13 01:03:38.502 INFO  (qtp223684-20) [   x:collection1] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-10-13 01:03:38.504 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@117a944[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-10-13 01:03:38.532 INFO  (qtp223684-20) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 65
+2017-10-13 01:03:38.631 INFO  (qtp223684-16) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[5174cdf5-4fdb-43de-8f60-28bf11641124 (1581102261672607744)]} 0 71
+2017-10-13 01:03:38.654 INFO  (qtp223684-17) [   x:collection1] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-10-13 01:03:38.654 INFO  (qtp223684-17) [   x:collection1] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1fc8392
+2017-10-13 01:03:39.006 INFO  (qtp223684-17) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@1cb1f7a[collection1] main]
+2017-10-13 01:03:39.006 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1cb1f7a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(6.4.1):C1)))}
+2017-10-13 01:03:39.006 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-13 01:03:39.017 INFO  (qtp223684-17) [   x:collection1] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-10-13 01:03:39.018 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@1cb1f7a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(6.4.1):C1)))}
+2017-10-13 01:03:39.019 INFO  (qtp223684-17) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 365
+2017-10-13 01:03:39.770 INFO  (qtp223684-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=7
+2017-10-13 01:03:59.530 INFO  (qtp223684-15) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/select params={q=repositories&indent=on&fl=*,[child+parentFilter%3Dtype_s:book]&wt=json} hits=1 status=0 QTime=60
+2017-10-13 01:26:17.976 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=16332680
+2017-10-13 01:26:17.978 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.c.SolrCore [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@1d2a98b
+2017-10-13 01:26:17.991 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.collection1
+2017-10-13 01:26:17.994 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
