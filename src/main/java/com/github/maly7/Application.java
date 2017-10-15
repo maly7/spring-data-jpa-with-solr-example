@@ -5,11 +5,13 @@ import com.github.maly7.data.jpa.BookRepository;
 import com.github.maly7.data.solr.SolrBookRepository;
 import com.github.maly7.domain.Book;
 import com.github.maly7.domain.BookAuthor;
+import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.repository.support.Repositories;
 import org.springframework.data.solr.repository.config.EnableSolrRepositories;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,9 +25,18 @@ public class Application {
     }
 
     @Bean
+    public Repositories repositories(ListableBeanFactory listableBeanFactory) {
+        return new Repositories(listableBeanFactory);
+    }
+
+    @Bean
     public CommandLineRunner dataLoader(BookRepository bookRepository,
-                                        BookAuthorRepository bookAuthorRepository, SolrBookRepository solrBookRepository) {
-        return args -> createEntities(bookRepository, bookAuthorRepository, solrBookRepository);
+                                        BookAuthorRepository bookAuthorRepository, SolrBookRepository solrBookRepository,
+                                        Repositories repositories) {
+        return args -> {
+            repositories.getRepositoryFor(Book.class); // This seems to always give a solr repo
+            createEntities(bookRepository, bookAuthorRepository, solrBookRepository);
+        };
     }
 
     @Transactional
