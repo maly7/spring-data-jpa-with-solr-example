@@ -1,73 +1,209 @@
-2017-10-13 01:38:09.233 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
-2017-10-13 01:38:09.796 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.4.1
-2017-10-13 01:38:09.796 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2017-10-13 01:38:09.796 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\paula\Documents\dev\spring-data-solr-example\solr
-2017-10-13 01:38:09.812 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-13T01:38:09.796Z
-2017-10-13 01:38:09.812 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
-2017-10-13 01:38:09.827 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr
-2017-10-13 01:38:09.827 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\solr.xml
-2017-10-13 01:38:10.155 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
-2017-10-13 01:38:10.218 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr
-2017-10-13 01:38:10.218 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [collection1]
-2017-10-13 01:38:10.296 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader [collection1] Added 51 libs to classloader, from paths: [/C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/clustering/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/extraction/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/langid/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/contrib/velocity/lib, /C:/Users/paula/Documents/dev/spring-data-solr-example/solr/dist]
-2017-10-13 01:38:10.343 INFO  (main) [   ] o.e.j.s.Server Started @1788ms
-2017-10-13 01:38:10.468 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.1
-2017-10-13 01:38:10.609 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema conf/managed-schema is still loadable.  PLEASE REMOVE THIS FILE.
-2017-10-13 01:38:10.671 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema [collection1] Schema name=example-data-driven-schema
-2017-10-13 01:38:10.874 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
-2017-10-13 01:38:11.031 INFO  (qtp223684-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=492
-2017-10-13 01:38:11.187 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
-2017-10-13 01:38:11.249 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.CoreContainer Creating SolrCore 'collection1' using configuration from instancedir C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1
-2017-10-13 01:38:11.265 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrCore [[collection1] ] Opening new SolrCore at [C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1], dataDir=[C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\data\]
-2017-10-13 01:38:11.265 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@141cb24
-2017-10-13 01:38:11.327 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2017-10-13 01:38:11.656 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2017-10-13 01:38:11.656 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2017-10-13 01:38:11.687 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
-2017-10-13 01:38:11.687 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2017-10-13 01:38:11.781 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@290d5a[collection1] main]
-2017-10-13 01:38:11.796 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\conf
-2017-10-13 01:38:11.812 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2017-10-13 01:38:11.812 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2017-10-13 01:38:11.827 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\paula\Documents\dev\spring-data-solr-example\solr\server\solr\collection1\conf\elevate.xml
-2017-10-13 01:38:11.843 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
-2017-10-13 01:38:11.859 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@290d5a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(6.4.1):C1)))}
-2017-10-13 01:38:11.859 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-10-13 01:38:11.859 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2017-10-13 01:38:11.859 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@290d5a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_k(6.4.1):C1)))}
-2017-10-13 01:38:27.981 INFO  (qtp223684-22) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@1d11257[collection1] realtime]
-2017-10-13 01:38:27.981 INFO  (qtp223684-22) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={wt=javabin&version=2}{deleteByQuery=*:* (-1581104452531650560)} 0 62
-2017-10-13 01:38:28.013 INFO  (qtp223684-21) [   x:collection1] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-10-13 01:38:28.013 INFO  (qtp223684-21) [   x:collection1] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@9c5f14
-2017-10-13 01:38:28.028 INFO  (qtp223684-21) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@1494883[collection1] main]
-2017-10-13 01:38:28.028 INFO  (qtp223684-21) [   x:collection1] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-10-13 01:38:28.028 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1494883[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-10-13 01:38:28.028 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-10-13 01:38:28.044 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@1494883[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2017-10-13 01:38:28.060 INFO  (qtp223684-21) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 44
-2017-10-13 01:38:28.106 INFO  (qtp223684-20) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[25493ff2-6521-4296-999f-5aa5f28ce63d (1581104452678451200)]} 0 40
-2017-10-13 01:38:28.122 INFO  (qtp223684-19) [   x:collection1] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2017-10-13 01:38:28.122 INFO  (qtp223684-19) [   x:collection1] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@9c5f14
-2017-10-13 01:38:28.310 INFO  (qtp223684-19) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@1cb1f7a[collection1] main]
-2017-10-13 01:38:28.310 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1cb1f7a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_l(6.4.1):C1)))}
-2017-10-13 01:38:28.310 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2017-10-13 01:38:28.310 INFO  (qtp223684-19) [   x:collection1] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2017-10-13 01:38:28.310 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@1cb1f7a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_l(6.4.1):C1)))}
-2017-10-13 01:38:28.310 INFO  (qtp223684-19) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 200
-2017-10-13 01:38:29.107 INFO  (qtp223684-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=3
-2017-10-13 01:38:40.706 INFO  (qtp223684-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1507858720549} status=0 QTime=0
-2017-10-13 01:38:40.769 INFO  (qtp223684-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1507858720549} status=0 QTime=64
-2017-10-13 01:38:40.769 INFO  (qtp223684-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1507858720549} status=0 QTime=72
-2017-10-13 01:38:43.580 INFO  (qtp223684-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1507858720549} status=0 QTime=0
-2017-10-13 01:38:43.584 INFO  (qtp223684-18) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1507858723566} status=0 QTime=1
-2017-10-13 01:38:43.588 INFO  (qtp223684-21) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/replication params={wt=json&command=details&_=1507858723567} status=0 QTime=2
-2017-10-13 01:38:43.592 INFO  (qtp223684-17) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1507858720549&ts=1507858720549} status=503 QTime=1
-2017-10-13 01:38:43.643 INFO  (qtp223684-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1507858720549} status=0 QTime=54
-2017-10-13 01:38:43.643 INFO  (qtp223684-18) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/system params={wt=json&_=1507858723567} status=0 QTime=65
-2017-10-13 01:38:46.473 INFO  (qtp223684-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1507858720549} status=0 QTime=0
-2017-10-13 01:38:46.501 INFO  (qtp223684-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1507858720549} status=0 QTime=26
-2017-10-13 01:39:00.334 INFO  (qtp223684-19) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/select params={q=repositories&indent=on&fl=*,[child+parentFilter%3Dtype_s:book]&wt=json&_=1507858726424} hits=1 status=0 QTime=21
-2017-10-13 01:39:28.012 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=16332680
-2017-10-13 01:39:28.012 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.c.SolrCore [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@18f709c
-2017-10-13 01:39:28.028 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.collection1
-2017-10-13 01:39:28.028 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2017-10-14 23:14:24.302 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-10-14 23:14:25.257 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.4.1
+2017-10-14 23:14:25.258 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-10-14 23:14:25.259 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr
+2017-10-14 23:14:25.295 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-10-14T23:14:25.261Z
+2017-10-14 23:14:25.296 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-10-14 23:14:25.326 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr
+2017-10-14 23:14:25.338 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\solr.xml
+2017-10-14 23:14:25.939 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-10-14 23:14:26.063 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr
+2017-10-14 23:14:26.071 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [collection1]
+2017-10-14 23:14:26.218 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader [collection1] Added 51 libs to classloader, from paths: [/C:/Users/paula/Documents/dev/spring-data-jpa-with-solr-example/solr/contrib/clustering/lib, /C:/Users/paula/Documents/dev/spring-data-jpa-with-solr-example/solr/contrib/extraction/lib, /C:/Users/paula/Documents/dev/spring-data-jpa-with-solr-example/solr/contrib/langid/lib, /C:/Users/paula/Documents/dev/spring-data-jpa-with-solr-example/solr/contrib/velocity/lib, /C:/Users/paula/Documents/dev/spring-data-jpa-with-solr-example/solr/dist]
+2017-10-14 23:14:26.287 INFO  (main) [   ] o.e.j.s.Server Started @3139ms
+2017-10-14 23:14:26.545 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.1
+2017-10-14 23:14:26.669 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema conf/managed-schema is still loadable.  PLEASE REMOVE THIS FILE.
+2017-10-14 23:14:26.735 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema [collection1] Schema name=example-data-driven-schema
+2017-10-14 23:14:27.004 WARN  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-10-14 23:14:27.207 INFO  (qtp223684-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=633
+2017-10-14 23:14:27.447 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-10-14 23:14:27.506 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.CoreContainer Creating SolrCore 'collection1' using configuration from instancedir C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1
+2017-10-14 23:14:27.535 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.SolrCore [[collection1] ] Opening new SolrCore at [C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1], dataDir=[C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\data\]
+2017-10-14 23:14:27.537 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@141cb24
+2017-10-14 23:14:27.780 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-10-14 23:14:29.120 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-10-14 23:14:29.120 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-10-14 23:14:29.175 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-10-14 23:14:29.177 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-10-14 23:14:29.404 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@290d5a[collection1] main]
+2017-10-14 23:14:29.424 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\conf
+2017-10-14 23:14:29.469 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-10-14 23:14:29.481 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-10-14 23:14:29.486 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\conf\elevate.xml
+2017-10-14 23:14:29.521 INFO  (coreLoadExecutor-6-thread-1) [   x:collection1] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-10-14 23:14:29.573 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@290d5a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_l(6.4.1):C1)))}
+2017-10-14 23:14:29.573 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-10-14 23:14:29.573 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-10-14 23:14:29.580 INFO  (searcherExecutor-7-thread-1-processing-x:collection1) [   x:collection1] o.a.s.c.SolrCore [collection1] Registered new searcher Searcher@290d5a[collection1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_l(6.4.1):C1)))}
+2017-10-14 23:15:00.518 INFO  (qtp223684-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=6
+2017-10-14 23:15:33.900 INFO  (qtp223684-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=1
+2017-10-14 23:19:04.606 INFO  (qtp223684-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=2
+2017-10-14 23:41:12.895 INFO  (qtp223684-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&indexInfo=true&wt=javabin&version=2} status=0 QTime=2
+2017-10-15 00:30:48.798 INFO  (qtp223684-22) [   x:collection1] o.a.s.u.p.LogUpdateProcessorFactory [collection1]  webapp=/solr path=/update params={wt=javabin&version=2}{add=[150ee749-7c0d-4289-b71b-c92fea4a63f6 (1581281390082654208)]} 0 142
+2017-10-15 00:31:03.802 INFO  (commitScheduler-10-thread-1) [   x:collection1] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-10-15 00:31:03.803 INFO  (commitScheduler-10-thread-1) [   x:collection1] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@a56845
+2017-10-15 00:31:04.278 INFO  (commitScheduler-10-thread-1) [   x:collection1] o.a.s.s.SolrIndexSearcher Opening [Searcher@12653d3[collection1] realtime]
+2017-10-15 00:31:04.285 INFO  (commitScheduler-10-thread-1) [   x:collection1] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-10-15 00:31:13.564 INFO  (qtp223684-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1508027473065} status=0 QTime=0
+2017-10-15 00:31:13.752 INFO  (qtp223684-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=167
+2017-10-15 00:31:13.752 INFO  (qtp223684-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=179
+2017-10-15 00:31:18.076 INFO  (qtp223684-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1508027473065} status=0 QTime=0
+2017-10-15 00:31:18.088 WARN  (qtp223684-18) [   x:collection1] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_13]
+java.nio.file.NoSuchFileException: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\data\index\segments_13
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.lucene.store.FilterDirectory.fileLength(FilterDirectory.java:67)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:614)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:587)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:166)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2306)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:464)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:296)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-15 00:31:18.094 INFO  (qtp223684-18) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1508027478059} status=0 QTime=8
+2017-10-15 00:31:18.137 INFO  (qtp223684-16) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/replication params={wt=json&command=details&_=1508027478060} status=0 QTime=6
+2017-10-15 00:31:18.144 INFO  (qtp223684-13) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1508027473066&ts=1508027473066} status=503 QTime=4
+2017-10-15 00:31:18.213 INFO  (qtp223684-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=122
+2017-10-15 00:31:18.218 INFO  (qtp223684-21) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/system params={wt=json&_=1508027478059} status=0 QTime=87
+2017-10-15 00:31:19.942 INFO  (qtp223684-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1508027473065} status=0 QTime=0
+2017-10-15 00:31:19.950 WARN  (qtp223684-22) [   x:collection1] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_13]
+java.nio.file.NoSuchFileException: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\data\index\segments_13
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.lucene.store.FilterDirectory.fileLength(FilterDirectory.java:67)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:614)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:587)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:166)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2306)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:464)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:296)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-15 00:31:19.962 INFO  (qtp223684-22) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1508027478059} status=0 QTime=12
+2017-10-15 00:31:20.033 INFO  (qtp223684-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=85
+2017-10-15 00:31:23.217 INFO  (qtp223684-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1508027473065} status=0 QTime=0
+2017-10-15 00:31:23.257 INFO  (qtp223684-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=40
+2017-10-15 00:31:25.300 INFO  (qtp223684-20) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1508027483176} hits=1 status=0 QTime=174
+2017-10-15 00:31:29.962 WARN  (qtp223684-22) [   x:collection1] o.a.s.h.a.LukeRequestHandler Error getting file length for [segments_13]
+java.nio.file.NoSuchFileException: C:\Users\paula\Documents\dev\spring-data-jpa-with-solr-example\solr\server\solr\collection1\data\index\segments_13
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:193)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:243)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:128)
+	at org.apache.lucene.store.FilterDirectory.fileLength(FilterDirectory.java:67)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getFileLength(LukeRequestHandler.java:614)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:587)
+	at org.apache.solr.handler.admin.LukeRequestHandler.handleRequestBody(LukeRequestHandler.java:138)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:166)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2306)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:464)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:296)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-15 00:31:29.969 INFO  (qtp223684-22) [   x:collection1] o.a.s.c.S.Request [collection1]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1508027478059} status=0 QTime=7
+2017-10-15 00:31:29.989 INFO  (qtp223684-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1508027473065} status=0 QTime=0
+2017-10-15 00:31:30.029 INFO  (qtp223684-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1508027473066} status=0 QTime=67
+2017-10-15 00:33:50.021 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=16332680
+2017-10-15 00:33:50.024 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.c.SolrCore [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@18f709c
+2017-10-15 00:33:50.072 INFO  (coreCloseExecutor-12-thread-1) [   x:collection1] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.collection1
+2017-10-15 00:33:50.076 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node

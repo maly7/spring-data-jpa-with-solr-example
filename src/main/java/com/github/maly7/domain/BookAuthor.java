@@ -1,7 +1,10 @@
 package com.github.maly7.domain;
 
+import org.springframework.data.solr.core.mapping.SolrDocument;
+
 import javax.persistence.*;
 
+@SolrDocument(solrCoreName = "collection1")
 @Entity
 @Table(name = "BOOK_AUTHOR")
 @PrimaryKeyJoinColumn(name = "AUTHOR_ID", referencedColumnName = "ID")

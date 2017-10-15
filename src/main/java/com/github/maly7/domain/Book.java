@@ -2,30 +2,37 @@ package com.github.maly7.domain;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.solr.client.solrj.beans.Field;
+import org.hibernate.annotations.GenericGenerator;
+import org.springframework.data.solr.core.mapping.SolrDocument;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@SolrDocument(solrCoreName = "collection1")
 public class Book {
-    private Long id;
+    private String id;
     private String title;
     private Set<BookAuthor> authors;
     private Set<Label> labels;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "uuid")
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
     @Column(name = "ID")
-    public Long getId() {
+    @Field(value = "id")
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
     @Basic
     @Column(name = "TITLE")
+    @Field(value = "title_s")
     public String getTitle() {
         return title;
     }
@@ -34,6 +41,7 @@ public class Book {
         this.title = title;
     }
 
+    //    @Field(child = true)
     @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     public Set<BookAuthor> getAuthors() {
         return authors;
