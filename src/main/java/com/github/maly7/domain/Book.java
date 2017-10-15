@@ -11,17 +11,31 @@ import java.util.Set;
 
 @Entity
 @SolrDocument(solrCoreName = "collection1")
+//TODO: Why do annotations need to be on fields?
 public class Book {
-    private String id;
-    private String title;
-    private Set<BookAuthor> authors;
-    private Set<Label> labels;
 
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @Column(name = "ID")
     @Field(value = "id")
+    private String id;
+
+    @Basic
+    @Column(name = "TITLE")
+    @Field(value = "title_s")
+    private String title;
+
+    //    @Field(child = true)
+    @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private Set<BookAuthor> authors;
+
+    @ManyToMany
+    @JoinTable(name = "book_label",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "label_id"))
+    private Set<Label> labels;
+
     public String getId() {
         return id;
     }
@@ -30,9 +44,6 @@ public class Book {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "TITLE")
-    @Field(value = "title_s")
     public String getTitle() {
         return title;
     }
@@ -41,8 +52,6 @@ public class Book {
         this.title = title;
     }
 
-    //    @Field(child = true)
-    @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     public Set<BookAuthor> getAuthors() {
         return authors;
     }
@@ -51,10 +60,6 @@ public class Book {
         this.authors = authors;
     }
 
-    @ManyToMany
-    @JoinTable(name = "book_label",
-            joinColumns = @JoinColumn(name = "book_id"),
-            inverseJoinColumns = @JoinColumn(name = "label_id"))
     public Set<Label> getLabels() {
         return labels;
     }

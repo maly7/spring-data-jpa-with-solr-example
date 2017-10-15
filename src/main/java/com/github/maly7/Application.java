@@ -23,6 +23,7 @@ public class Application {
     public CommandLineRunner dataLoader(BookRepository bookRepository, SolrBookRepository solrBookRepository) {
         return args -> {
             solrBookRepository.deleteAll();
+            bookRepository.deleteAll();
 
             Book book = new Book();
             book.setTitle("A Tale of Two Repositories");
