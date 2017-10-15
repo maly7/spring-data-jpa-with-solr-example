@@ -9,10 +9,11 @@ import javax.persistence.*;
 @Table(name = "BOOK_AUTHOR")
 @PrimaryKeyJoinColumn(name = "AUTHOR_ID", referencedColumnName = "ID")
 public class BookAuthor extends Writer {
-    private Book book;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "BOOK_ID", referencedColumnName = "ID")
+    private Book book;
+
     public Book getBook() {
         return book;
     }

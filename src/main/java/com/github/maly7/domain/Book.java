@@ -26,7 +26,7 @@ public class Book {
     @Field(value = "title_s")
     private String title;
 
-    //    @Field(child = true)
+    @Field(child = true)
     @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<BookAuthor> authors;
 

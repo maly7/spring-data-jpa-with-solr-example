@@ -35,6 +35,8 @@ dependencies {
     compile 'org.flywaydb:flyway-core:4.2.0'
     compile 'org.apache.commons:commons-lang3:3.6'
     compile 'org.apache.commons:commons-collections4:4.1'
+    compile 'com.google.guava:guava:19.0'
+
 
     runtime 'com.h2database:h2'
 

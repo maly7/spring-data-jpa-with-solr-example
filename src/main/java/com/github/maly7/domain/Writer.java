@@ -10,14 +10,19 @@ import javax.persistence.*;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Writer {
-    private String id;
-    private String name;
 
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     @Column(name = "ID")
     @Field(value = "id")
+    private String id;
+
+    @Basic
+    @Column(name = "NAME")
+    @Field(value = "name_s")
+    private String name;
+
     public String getId() {
         return id;
     }
@@ -26,9 +31,6 @@ public class Writer {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "NAME")
-    @Field(value = "name_s")
     public String getName() {
         return name;
     }
